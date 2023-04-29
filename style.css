@@ -1,0 +1,213 @@
+.attribution {
+        text-align: center;
+        margin-top: 7%;
+      }
+
+.attribution a {
+        color: hsl(300, 43%, 22%);
+      }
+
+.attribution a:hover {
+    color: hsl(333, 80%, 67%);
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    margin-top: 5%;
+    font-size: 17px;
+}
+
+p {
+    margin: 0;
+}
+
+.main {
+    width: 75%;
+    margin: 7% auto;
+}
+
+.intro {
+    display: flex;
+    margin-bottom: 5%;
+    padding: 0;
+    justify-content: space-between;
+}
+
+    .intro-left {
+        width: 400px;
+        color: hsl(303, 10%, 53%);
+    }
+
+        #title {
+            font-size: 3.1em;
+            color: hsl(300, 43%, 22%);
+            font-weight: 700;
+            margin-bottom: 7%;
+            margin-right: 10%;
+        }
+
+        #description {
+            line-height: 1.5;
+        }
+
+    .intro-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8%;
+        width: 450px;
+    }
+
+        .stars {
+            display: flex;
+            align-items: center;
+            background-color: hsl(300, 24%, 96%);
+            color: hsl(300, 43%, 22%);
+            font-weight: 700;
+            padding: 5% 7%;
+            border-radius: 10px;
+            width: auto;
+            position: relative;
+        }
+
+        .stars-1 {
+            right: 80px;
+        }
+
+        .stars-2 {
+            right: 40px;
+        }
+
+        .stars-img {
+            display: flex;
+            gap: 10px;
+        }
+
+        .stars p {
+            margin-left: 8%;
+        }
+
+.feedbacks {
+    display: flex;
+    gap: 2.5%;
+}
+
+    .feedbacks-component {
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+        padding: 3%;
+        color: white;
+        position: relative;
+        width: 30%;
+    }
+
+    .component-2 {
+        top: 20px;
+    }
+
+    .component-3 {
+        top: 40px;
+    }
+
+    .feedback_identity {
+        display: flex;
+        align-items: center;
+        margin-bottom: 9%;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+        .feedback_identity img {
+            border-radius: 50%;
+            margin-right: 9%;
+            height: 40px;
+        }
+
+        h1 {
+            font-size: 18px;
+        }
+
+        .violet {
+            color: hsl(333, 80%, 67%);
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .comment {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+
+@media all and (min-width:376px) {
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+    }
+}
+
+@media all and (max-width:375px) {
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
+    }
+
+    .stars,
+    .feedbacks-component {
+        position: initial;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .intro {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .intro-left,
+    .intro-right {
+        width: auto;
+    }
+
+    #title {
+        font-size: 2em;
+        margin: auto;
+        padding: 5%;
+        margin-top: 10%;
+    }
+
+    #description {
+        margin-bottom: 10%;
+        margin-top: 3%;
+    }
+
+    .stars {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    .stars p {
+        margin: 0;
+        margin-top: 6%;
+    }
+
+    .feedbacks {
+        flex-direction: column;
+    }
+
+    .feedbacks-component {
+        padding: 10%;
+        margin-bottom: 5%;
+        width: auto;
+    }
+}
